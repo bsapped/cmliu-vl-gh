@@ -1,8 +1,8 @@
 
 import { connect } from 'cloudflare:sockets';
 
-let userID = '';
-let proxyIP = '';
+let userID = '6cb3f64b-e138-4146-b490-c4568b27dde0';
+//let proxyIP = '';
 //let sub = '';
 let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
 let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvY29uZmlnL0FDTDRTU1JfT25saW5lX01pbmlfTXVsdGlNb2RlLmluaQ==');
@@ -14,7 +14,7 @@ let enableSocks = false;
 
 let noTLS = 'false';
 const expire = 4102329600;//2099-12-31
-let proxyIPs;
+let proxyIPs = ["proxycf.zone.id"];
 let socks5s;
 let go2Socks5s = [
 	'*ttvnw.net',
