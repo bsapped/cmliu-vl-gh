@@ -2,7 +2,7 @@
 import { connect } from 'cloudflare:sockets';
 
 let userID = '9722a18c-600f-41a3-81e5-0b1f80b0e129';
-//let proxyIP = '';
+let proxyIP = 'workers.cloudflare.cyou';
 //let sub = '';
 let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
 let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvY29uZmlnL0FDTDRTU1JfT25saW5lX01pbmlfTXVsdGlNb2RlLmluaQ==');
@@ -14,7 +14,7 @@ let enableSocks = false;
 
 let noTLS = 'false';
 const expire = 4102329600;//2099-12-31
-let proxyIPs = ["proxycf.zone.id"];
+let proxyIPs;
 let socks5s;
 let go2Socks5s = [
 	'*ttvnw.net',
